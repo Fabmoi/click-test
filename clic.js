@@ -21,10 +21,3 @@ function updateNumberClick(number) {
     }
  
 }
-
-                        // FONCTION POUR RESET LE COMPTEUR DE CLIC
-function resetCounter() {
-    counterClick = 0;
-    updateNumberClick(counterClick);
-}
-                        
