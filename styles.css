@@ -17,7 +17,7 @@ img.zone-herbe-herbe:active {
 div.zone-reset-button {
     width: 175px;
     height: 75px;
-    background-color: chartreuse;
+    background-color: chartreuse !important;
 }
 div.zone-reset-button p {
     font-size: 12px;
