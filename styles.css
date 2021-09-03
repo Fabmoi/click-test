@@ -14,8 +14,16 @@ img.zone-herbe-herbe:active {
     transition: all 75ms ease-in;
     transform: scale(1.25);
 }
-
-button.first-stuff-10 {
+div.zone-reset-button {
+    width: 175px;
+    height: 75px;
+    background-color: chartreuse;
+}
+div.zone-reset-button p {
+    font-size: 12px;
+    font-weight: bold;
+}
+button.first-stuff-20 {
     width: 150px;
     height: 50px;
     border: solid 1px black;
