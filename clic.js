@@ -43,14 +43,3 @@ function updateNumberClick(number){
         button.disabled = false;
     }
 }
-////////////////////////////////////////  ////////////////////////////////////////
-
-
-/* const button = document.getElementById("btn");
-    if (counterClick < 10) {
-        button.disabled = true;
-    }    */
-
-
-
-
