@@ -3,6 +3,9 @@ window.onload = function () {
     let clickDiv = document.getElementById("click-here");
     clickDiv.onclick = addClick;
 }
+addClick = function() {
+    updateNumberClick(+counterClick);
+}
 var counterClick = 0;
 
 //////////////////////////////////////// AUGMENTER LES CLICS ////////////////////////////////////////
@@ -23,16 +26,18 @@ $(document).ready(function(){
 });
 //////////////////////////////////////// DÉPENSER LES CLICS ////////////////////////////////////////
 $(document).ready(function(){
-    
+    var autoClick = document.getElementById('click-here');
+
     document.querySelector(".first-stuff-10").addEventListener("click", function() {
         counterClick = counterClick -10;
         document.getElementById("click-counter").innerHTML = counterClick;
+        setInterval(function(){
+            autoClick.click();
+        },200);
     });
 });
 //////////////////////////////////////// BOUTON BONUS DÉSACTIVÉ ET ACTIVÉ ////////////////////////////////////////
-addClick = function() {
-    updateNumberClick(+counterClick);
-}
+
 function updateNumberClick(number){
     var button = document.getElementById("btn");
     document.getElementById("click-counter").innerHTML = number;
@@ -43,3 +48,25 @@ function updateNumberClick(number){
         button.disabled = false;
     }
 }
+////////////////////////////////////////  ////////////////////////////////////////
+
+
+
+/* 
+function updateNumberClick (autoNumberOne){
+    var autoClick = document.getElementById("click-here");
+    document.getElementById("click-counter").innerHTML = autoNumberOne;
+    setInterval(function(){
+        autoClick.click();
+    },200);
+}  */
+
+
+/* const button = document.getElementById("btn");
+    if (counterClick < 10) {
+        button.disabled = true;
+    }    */
+
+
+
+
