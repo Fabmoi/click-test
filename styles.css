@@ -15,6 +15,10 @@ img.zone-herbe-herbe:active {
     transform: scale(1.25);
 }
 
-
+button.first-stuff-10 {
+    width: 150px;
+    height: 50px;
+    border: solid 1px black;
+}
 
   
