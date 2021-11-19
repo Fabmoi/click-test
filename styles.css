@@ -1,32 +1,51 @@
 
-
-img.zone-herbe-herbe {
-    display: block;
+body {
+    background-color: rgb(140,140,140);
+}
+div.click-counter,
+div.planet-per-second {
+    width: max-content;
+    height: min-content;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    border: solid 1px black;
+    background-color: rgb(140,165,250);
+    font-weight: bold;
+}
+div.click-counter {
+    font-size: 20px;
+}
+div.planet-per-second {
+    font-size: 14px;
+}
+img.zone-planet-planet {
     margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
+    display: block;
     position: relative;
 }
-img.zone-herbe-herbe:active {
+img.zone-planet-planet:active {
     z-index: 2;
-    -webkit-transition: all 75ms ease-in;
-    -webkit-transform: scale(1.25);
-    transition: all 75ms ease-in;
+    transition: all 500ms;
     transform: scale(1.25);
 }
 div.zone-reset-button {
     width: 175px;
     height: 75px;
-    background-color: chartreuse !important;
+    background-color: rgb(125,255,0);
 }
 div.zone-reset-button p {
     font-size: 12px;
     font-weight: bold;
 }
-button.first-stuff-20 {
-    width: 150px;
-    height: 50px;
+button.first-stuff-20,
+button.second-stuff-100,
+button.third-stuff-245 {
+    width: max-content;
+    height: min-content;
+    margin-top: 5px;
     border: solid 1px black;
+    font-weight: bold;
 }
-
   

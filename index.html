@@ -12,16 +12,21 @@
 
 <body>
     <center>Ici, pas d'argent <br> Seules les planètes servent de monnaie d'échange</center>
-    <h3><center>Planètes en stock:</center></h3>
+    
     <center>
-        <div>
+        <div class="click-counter">
+            <center>Planètes en stock:</center>
             <div id="click-counter">0</div>
+        </div>
+        <div class="planet-per-second">
+            <center>Planète par seconde:</center>
+            <div id="planet-per-second">0</div>
         </div>
 </center>
     <center>
-        <div>
-            <div><img id="click-here" class="auto-click-here zone-herbe-herbe" src="venus.jpg" alt="planete" title="planete"></div>
-        </div>
+            <div>
+                <img id="click-here" class="auto-click-here zone-planet-planet" src="planet.jpg" alt="planete" title="planete">
+            </div>
     </center>
     <br><br>
     <center><div class="zone-reset-button">→→→
@@ -29,7 +34,26 @@
         <p>Donner toutes vos planètes pour rien en retour</p>
     </div></center>
     <br><br>
-    <center><button id="first-bonus" class="first-stuff-20" disabled>first item</button></center>
+    <center><button id="first-bonus" class="first-stuff-20" disabled>first item 
+        <div id="number-first-bonus">Achetés: 0</div>
+        <div class="first-per-second">Planète par seconde:
+            <span id="planet-first-per-second">0</span>
+        </div>
+        <span id="price-first-stuff">Prix: 20</span> </button></center>
+        
+    <center><button id="second-bonus" class="second-stuff-100" disabled>second item 
+        <div id="number-second-bonus">Achetés: 0</div>
+        <div class="second-per-second">Planète par seconde: 
+            <span id="planet-second-per-second">0</span>
+        </div>
+        <span id="price-second-stuff">Prix: 120</span> </button></center>
+        
+    <center><button id="third-bonus" class="third-stuff-245" disabled>second item 
+        <div id="number-third-bonus">Achetés: 0</div>
+        <div class="third-per-second">Planète par seconde:
+            <span id="planet-third-per-second">0</span>
+        </div>
+        <span id="price-third-stuff">Prix: 245</span> </button></center>
 
     
     <script type="text/javascript" src="clic.js"></script>
